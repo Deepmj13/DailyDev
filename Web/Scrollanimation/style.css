@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width:100vw;
+    height:100vh;
+    display:flex;align-items:center;justify-content:center;
+    flex-direction: column;
+    background-color:#cac2c2;
+}
+
+.content{
+    width:400px;height:400px;
+    background-color:#000;
+}
+.animation{
+    animation: animation linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes animation{
+    from {
+        scale:0.6;
+        opacity: 0;
+    }
+    to{
+        scale:1;
+        opacity: 1;
+    }
+}
